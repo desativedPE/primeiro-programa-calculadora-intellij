@@ -14,7 +14,7 @@ public class PrimeiroPrograma {
             if (operacao == "-"){
                 System.out.println(primeiroNumero + " - " + segundoNumero + " = " + subtracao(primeiroNumero, segundoNumero));
             } else {
-                System.out.println("Nenhuma operaćão valida foi selecionada.");
+                System.out.println("Nenhuma operação valida foi selecionada.");
             }
         }
 
