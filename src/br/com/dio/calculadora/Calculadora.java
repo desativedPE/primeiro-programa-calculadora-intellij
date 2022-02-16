@@ -7,21 +7,39 @@ public class Calculadora {
         Scanner scan = new Scanner(System.in);
 
         int primeiroNumero, segundoNumero;
+        String operacao;
 
         System.out.println("Digite o primeiro valor: ");
         primeiroNumero = scan.nextInt();
         System.out.println("Digite o segundo valor: ");
         segundoNumero = scan.nextInt();
+        System.out.print("Qual operaćão deseja fazer? ");
+        System.out.println("Digite: + para Somar | - para Subtrair | * para Multiplicar | / para Dividir");
+        operacao = scan.next();
+
+        //System.out.println(operacao);
 
         int soma = somar(primeiroNumero, segundoNumero);
         int subtracacao = subtrair(primeiroNumero, segundoNumero);
         int multiplicacao = multiplicar(primeiroNumero, segundoNumero);
         int divisao = dividir(primeiroNumero, segundoNumero);
 
-        System.out.println("A soma é " + soma);
-        System.out.println("A subtracação é " + subtracacao);
-        System.out.println("A multiplicação é " + multiplicacao);
-        System.out.println("A divisão é " + divisao);
+        switch (operacao){
+            case "+":
+                System.out.println(primeiroNumero + " + " + segundoNumero + " = " + soma);
+                break;
+            case "-":
+                System.out.println(primeiroNumero + " - " + segundoNumero + " = " + subtracacao);
+                break;
+            case "*":
+                System.out.println(primeiroNumero + " * " + segundoNumero + " = " + multiplicacao);
+                break;
+            case "/":
+                System.out.println(primeiroNumero + " / " + segundoNumero + " = " + divisao);
+                break;
+            default:
+                System.out.println("Operaćão inválida! Tente novamente.");
+        }
 
     }
 
