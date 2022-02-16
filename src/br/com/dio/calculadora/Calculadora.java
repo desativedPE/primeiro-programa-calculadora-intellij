@@ -19,8 +19,8 @@ public class Calculadora {
         int divisao = dividir(primeiroNumero, segundoNumero);
 
         System.out.println("A soma é " + soma);
-        System.out.println("A subtracacão é " + subtracacao);
-        System.out.println("A multiplicacão é " + multiplicacao);
+        System.out.println("A subtracação é " + subtracacao);
+        System.out.println("A multiplicação é " + multiplicacao);
         System.out.println("A divisão é " + divisao);
 
     }
