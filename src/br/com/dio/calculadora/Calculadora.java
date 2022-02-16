@@ -13,11 +13,9 @@ public class Calculadora {
         primeiroNumero = scan.nextInt();
         System.out.println("Digite o segundo valor: ");
         segundoNumero = scan.nextInt();
-        System.out.print("Qual operaćão deseja fazer? ");
+        System.out.print("Qual operação deseja fazer? ");
         System.out.println("Digite: + para Somar | - para Subtrair | * para Multiplicar | / para Dividir");
         operacao = scan.next();
-
-        //System.out.println(operacao);
 
         int soma = somar(primeiroNumero, segundoNumero);
         int subtracacao = subtrair(primeiroNumero, segundoNumero);
@@ -38,7 +36,7 @@ public class Calculadora {
                 System.out.println(primeiroNumero + " / " + segundoNumero + " = " + divisao);
                 break;
             default:
-                System.out.println("Operaćão inválida! Tente novamente.");
+                System.out.println("Operação inválida! Tente novamente.");
         }
 
     }
